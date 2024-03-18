@@ -4,6 +4,32 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+
+{
+
+    options.AddPolicy(MyAllowSpecificOrigins,
+
+               policy =>
+
+               {
+
+                   policy.WithOrigins("http://localhost:4200")
+
+                           .AllowAnyHeader()
+
+                           .AllowAnyMethod()
+
+                           .AllowAnyOrigin();
+
+               });
+
+});
+
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -11,7 +37,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<KeyStoreApplicationDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("KeyStoreConnectionStr")));
+builder.Services.AddDbContext<KeyStoreApplicationDBContext>
+    (options => options.UseSqlServer
+    (builder.Configuration.GetConnectionString("KeyStoreConnectionStr")));
 builder.Services.AddScoped<IKeyStoreRepository, KeysRepository>();
 builder.Services.AddScoped<IUserStoreRepository, UsersRepository>();
 
@@ -23,6 +51,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseHttpsRedirection();
 

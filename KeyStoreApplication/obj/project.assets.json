@@ -3815,6 +3815,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "KeyStoreApplication.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.28",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.28"
+        },
+        "compile": {
+          "bin/placeholder/KeyStoreApplication.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KeyStoreApplication.DAL.dll": {}
+        }
       }
     }
   },
@@ -11101,10 +11115,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "KeyStoreApplication.DAL/1.0.0": {
+      "type": "project",
+      "path": "../KeyStoreApplication.DAL/KeyStoreApplication.DAL.csproj",
+      "msbuildProject": "../KeyStoreApplication.DAL/KeyStoreApplication.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "KeyStoreApplication.DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.28",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.28",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.28",
@@ -11113,24 +11133,19 @@
     ]
   },
   "packageFolders": {
-    "E:\\Users\\00013712\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\soatov.kahramon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\peter\\ZDrive\\00013712\\Desktop\\KeyStoreApplication\\KeyStoreApplication\\KeyStoreApplication.csproj",
+      "projectUniqueName": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication\\KeyStoreApplication.csproj",
       "projectName": "KeyStoreApplication",
-      "projectPath": "\\\\peter\\ZDrive\\00013712\\Desktop\\KeyStoreApplication\\KeyStoreApplication\\KeyStoreApplication.csproj",
-      "packagesPath": "E:\\Users\\00013712\\.nuget\\packages\\",
-      "outputPath": "\\\\peter\\ZDrive\\00013712\\Desktop\\KeyStoreApplication\\KeyStoreApplication\\obj\\",
+      "projectPath": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication\\KeyStoreApplication.csproj",
+      "packagesPath": "C:\\Users\\soatov.kahramon\\.nuget\\packages\\",
+      "outputPath": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "E:\\Users\\00013712\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\soatov.kahramon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11138,13 +11153,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication.DAL\\KeyStoreApplication.DAL.csproj": {
+              "projectPath": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication.DAL\\KeyStoreApplication.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -11199,7 +11217,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

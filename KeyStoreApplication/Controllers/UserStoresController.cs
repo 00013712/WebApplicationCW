@@ -11,7 +11,7 @@ using KeyStoreApplication.Repositories;
 
 namespace KeyStoreApplication.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[Action]")]
     [ApiController]
     public class UserStoresController : ControllerBase
     {

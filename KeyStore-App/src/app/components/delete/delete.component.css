@@ -1,0 +1,76 @@
+/* Center the content */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the card */
+.mat-card {
+    width: 50%; /* Adjust width as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.mat-card:hover {
+    transform: scale(1.05); /* Adjust as needed */
+}
+
+/* Style the headings */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+span {
+    font-size: 2rem; /* Adjust as needed */
+}
+
+/* Style the chip */
+.mat-chip {
+    background-color: #f0f0f0; /* Adjust as needed */
+    color: #333; /* Adjust as needed */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.flex.justify-around {
+    margin-top: 1rem; /* Adjust as needed */
+}
+/* Style the buttons */
+button {
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem;
+    font-size: 1.5rem; 
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ddd; /* Adjust as needed */
+}
+
+/* Cancel button */
+button[color="primary"] {
+    background-color: #265e9e; /* Adjust as needed */
+    color: #fff;
+}
+
+/* Delete button */
+button[color="warn"] {
+    background-color: darkred; /* Adjust as needed */
+    color: #fff;
+}
+
+/* Hover effect for Cancel button */
+button[color="primary"]:hover {
+    background-color: blue; /* Adjust as needed */
+}
+
+/* Hover effect for Delete button */
+button[color="warn"]:hover {
+    background-color: red; /* Adjust as needed */
+}
