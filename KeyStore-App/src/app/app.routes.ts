@@ -1,3 +1,4 @@
+//App_routes typescript Student_ID_00013712
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { EditComponent } from './components/edit/edit.component';

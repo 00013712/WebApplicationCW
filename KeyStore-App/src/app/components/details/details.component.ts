@@ -1,10 +1,10 @@
+//Details typescript Student_ID_ 00013712
 import { Component, OnInit, inject } from '@angular/core';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
 import { KeyStoreAppItems } from '../../KeyStoreAppItems';
 import { KeyStoreAppService } from '../../key-store-app.service';
 import { ActivatedRoute } from '@angular/router';
-
 
 @Component({
   selector: 'app-details',
