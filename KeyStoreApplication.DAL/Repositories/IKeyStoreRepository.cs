@@ -2,6 +2,7 @@
 
 namespace KeyStoreApplication.Repositories
 {
+    //Made by Wiut student 00013712
     public interface IKeyStoreRepository
     {
         Task<IEnumerable<KeyStore>> GetAllKeys();
@@ -10,4 +11,6 @@ namespace KeyStoreApplication.Repositories
         Task UpdateKey(KeyStore keystore);
         Task DeleteKey(int Id);
     }
+
+    //Made by Wiut student 00013712
 }

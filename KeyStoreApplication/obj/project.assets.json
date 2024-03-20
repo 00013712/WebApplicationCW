@@ -11133,19 +11133,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\soatov.kahramon\\.nuget\\packages\\": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication\\KeyStoreApplication.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Downloads\\KeyStoreApplication_\\KeyStoreApplication_00013712\\KeyStoreApplication\\KeyStoreApplication.csproj",
       "projectName": "KeyStoreApplication",
-      "projectPath": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication\\KeyStoreApplication.csproj",
-      "packagesPath": "C:\\Users\\soatov.kahramon\\.nuget\\packages\\",
-      "outputPath": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication\\obj\\",
+      "projectPath": "C:\\Users\\hp\\Downloads\\KeyStoreApplication_\\KeyStoreApplication_00013712\\KeyStoreApplication\\KeyStoreApplication.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\Downloads\\KeyStoreApplication_\\KeyStoreApplication_00013712\\KeyStoreApplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\soatov.kahramon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11159,8 +11159,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication.DAL\\KeyStoreApplication.DAL.csproj": {
-              "projectPath": "Z:\\Desktop\\00013712\\Semester_2\\Web Applications\\KeyStoreApplication\\KeyStoreApplication.DAL\\KeyStoreApplication.DAL.csproj"
+            "C:\\Users\\hp\\Downloads\\KeyStoreApplication_\\KeyStoreApplication_00013712\\KeyStoreApplication.DAL\\KeyStoreApplication.DAL.csproj": {
+              "projectPath": "C:\\Users\\hp\\Downloads\\KeyStoreApplication_\\KeyStoreApplication_00013712\\KeyStoreApplication.DAL\\KeyStoreApplication.DAL.csproj"
             }
           }
         }
@@ -11169,6 +11169,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -11217,7 +11222,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KeyStoreApplication.Repositories
 {
+    //Made by Wiut student 00013712
     public class UsersRepository : IUserStoreRepository
     {
         private readonly KeyStoreApplicationDBContext _dbContext;
@@ -32,7 +33,7 @@ namespace KeyStoreApplication.Repositories
 
         public async Task DeleteUser(int Id)
         {
-            var userstore = await _dbContext.Userstore.FirstOrDefaultAsync(u => u.Id == Id);
+            var userstore = await _dbContext.Userstore.FirstOrDefaultAsync(k => k.Id == Id);
             if (userstore != null)
             {
                 _dbContext.Userstore.Remove(userstore);
@@ -45,7 +46,7 @@ namespace KeyStoreApplication.Repositories
             _dbContext.Entry(userstore).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }
-
-
     }
+
+    //Made by Wiut student 00013712
 }

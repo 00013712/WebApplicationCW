@@ -11,7 +11,9 @@ using KeyStoreApplication.Repositories;
 
 namespace KeyStoreApplication.Controllers
 {
-    [Route("api/[controller]/[Action]")]
+    //Made by Wiut student 00013712
+
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class KeyStoresController : ControllerBase
     {
@@ -46,10 +48,6 @@ namespace KeyStoreApplication.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutKeyStore(int id, KeyStore keystore)
         {
-            if (id != keystore.Id)
-            {
-                return BadRequest();
-            }
             await _keysStoreRepository.UpdateKey(keystore);
             return NoContent();
         }
@@ -71,4 +69,6 @@ namespace KeyStoreApplication.Controllers
             return NoContent();
         }
     }
+
+    //Made by Wiut student 00013712
 }

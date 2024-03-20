@@ -5,6 +5,10 @@ namespace KeyStoreApplication.Models
 {
     public class KeyStore
     {
+        //Made by Wiut student 00013712
+
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]   
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Login can not be empty")]
@@ -19,6 +23,7 @@ namespace KeyStoreApplication.Models
         public int? UserId { get; set; }
         [ForeignKey("UserId")]
         public UserStore? UserStore { get; set; }
-
     }
+
+    //Made by Wiut student 00013712
 }

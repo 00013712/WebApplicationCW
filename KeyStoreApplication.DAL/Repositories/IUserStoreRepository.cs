@@ -2,6 +2,7 @@
 
 namespace KeyStoreApplication.Repositories
 {
+    //Made by Wiut student 00013712
     public interface IUserStoreRepository
     {
         Task<IEnumerable<UserStore>> GetAllUsers();
@@ -10,4 +11,6 @@ namespace KeyStoreApplication.Repositories
         Task UpdateUser(UserStore userstore);
         Task DeleteUser(int Id);
     }
+
+    //Made by Wiut student 00013712
 }

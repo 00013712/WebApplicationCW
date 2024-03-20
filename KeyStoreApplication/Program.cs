@@ -8,6 +8,8 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 builder.Services.AddCors(options =>
 
+//Made by Wiut student 00013712
+
 {
 
     options.AddPolicy(MyAllowSpecificOrigins,
@@ -61,3 +63,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//Made by Wiut student 00013712
