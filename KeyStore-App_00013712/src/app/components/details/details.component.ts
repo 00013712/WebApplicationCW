@@ -34,5 +34,4 @@ export class DetailsComponent{
     });
   }
 }
-
 //Details typescript Student_ID_ 00013712

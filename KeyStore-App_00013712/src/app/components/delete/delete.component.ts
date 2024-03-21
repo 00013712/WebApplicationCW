@@ -37,6 +37,8 @@ export class DeleteComponent {
     })
   }
 
+//Delete typescript Student_ID_ 00013712
+
   onHomeButtonClick(){
     this.router.navigateByUrl("home")
   }
@@ -48,5 +50,4 @@ export class DeleteComponent {
     })
   }
 }
-
 //Delete typescript Student_ID_ 00013712

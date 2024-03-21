@@ -22,9 +22,7 @@ export class CreateComponent  implements OnInit{
   KeyStoreService = inject(KeyStoreAppService);
 
   router = inject(Router);
-
   cate : any ;
-
   cID: number = 0;
 
   createKey: any = {
@@ -34,6 +32,7 @@ export class CreateComponent  implements OnInit{
     userId:0
   }
 
+//Create typescript Student_ID_ 00013712
   ngOnInit(){
     this.KeyStoreService.getAllUsers().subscribe((result) =>{
       this.cate = result

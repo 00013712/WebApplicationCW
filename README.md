@@ -30,6 +30,8 @@ Installation
 5. Start the MongoDB server
 6. Navigate to http://localhost:4200/ in your web browser to view the application.
 
+"LINK TO THE DEMO VIDEO":  https://youtu.be/mU4M34UoeCE
+
 About
 The Key Store Application allows users to store and manage their login credentials for various web platforms securely. Users can add, edit, delete, and view details of their stored credentials. The application provides a user-friendly interface built with Angular and Angular Material.
 
